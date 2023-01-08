@@ -1,14 +1,14 @@
 import './App.css';
-import { Route,Routes } from 'react-router-dom';
+
 import Navbar from './components/navbar';
+import Post from './components/post';
 
 function App() {
   return (
    <>
-   <Routes>
-    <Route path='/' element = {<Navbar/>} />
-   </Routes>
-   
+   <Navbar/>
+   <Post/>
+
    </>
   );
 }

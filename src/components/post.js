@@ -3,7 +3,7 @@ import "./post.css"
 import { Avatar } from '@mui/material'
 
 
-function Post() {
+function Post({username,caption,imageurl}) {
   return (
     
     <div className='post'>
@@ -13,12 +13,12 @@ function Post() {
         alt='Hamayoon khosa'
         src='/images/hamayoon.jpg'
         />
-    <h3>Hamayoon</h3>
+    <h3>{username}</h3>
     </div>
     {/*Header --> avatar --> user name */}
-    <img className='post__image' src='https://reactjs.org/logo-og.png'/>
+    <img className='post__image' src={imageurl}/>
     {/*image post */}
-    <h4 className='post__text'><strong> Hamayoon:</strong>This is my first pic</h4>
+    <h4 className='post__text'><strong> {username}:</strong>{caption}</h4>
     {/*Footer comments */}
     </div>
     
